@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Movie Search App</h1>
+    </header>
+    <main class="main-container">
+        <div class="movie-card">
+            <div id="movie-poster-container">
+                <img id="movie-poster" src="" alt="">
+            </div>
+            <div id="movie-data">
+                <h2 id="movie-title"></h2>
+                <p id="movie-releaseyear"></p>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Enter Movie Name" id="input" tabindex="1">
+            <button onclick="getInput()" tabindex="2">Get Details</button>
+            <button onclick="showMoreInfo()" tabindex="3">Extra Info</button>
+        </div>
+        <section class="modal hidden" id="info-modal">
+            <div id="modal-heading-container">
+                <h1 id="modal-heading">Heading</h1>
+                <img src="./images/cancel.png" alt="Cancel Button" id="close-modal">
+            </div>
+
+            <div>
+                <span class="span" id="genre-span"></span>
+                <p class="extra-info" id="genre"></p>
+            </div>
+
+            <div>
+                <span class="span" id="director-span"></span>
+                <p class="extra-info" id="director"></p>
+            </div>
+
+            <div>
+                <span class="span" id="writer-span"></span>
+                <p class="extra-info" id="writer"></p>
+            </div>
+
+            <div>
+                <span class="span" id="actors-span"></span>
+                <p class="extra-info" id="actors"></p>
+            </div>
+
+            <div>
+                <span class="span" id="plot-span"></span>
+                <p class="extra-info" id="plot"></p>
+            </div>
+        </section>
+        <div class="overlay hidden"></div>
+    </main>
+    <footer>&copy; Movie Search App, 2024, Ashim Sharma</footer>
+</body>
+
+</html>
