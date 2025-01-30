@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    fetchData(`https://www.omdbapi.com/?i=tt3896198&apikey=4634a2f8&t=3 Idiots`)
+    fetchData(`https://www.omdbapi.com/?i=tt3896198&apikey=4634a2f8&t=Moosa Jatt`)
         .then(data => {
             createCard(data);
             setExtraInfo(data);
